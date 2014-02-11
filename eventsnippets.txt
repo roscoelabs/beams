@@ -1,0 +1,34 @@
+
+A handy how-to on creating Google Analytics event trackers from blog post at http://www.koozai.com/blog/analytics/how-to-track-clicks-on-a-link-in-google-analytics-7721/
+
+CODE SAMPLE:
+
+<a href=”” onClick=”_gaq.push(['_trackEvent', 'External Link', 'Twitter Link', 'Follow Us - Words']);”>Follow Us</a>
+
+
+Where the labels used correlate to the following breakdowns in Google Analytics:
+
+Category (required), Action (Required), Label 1 (Optional), Label 2 (Optional, not included in example)
+
+
+With all this in mind, we're going to need to write three event-tracking snippets for the ADMVP prototype:
+
+1. An event to track clicks on the "close link" for the interstitial.
+
+<a href=”tktktk” onClick=”_gaq.push(['_trackEvent', 'Sponsorships', 'Interstitial Closed', 'Sponsor1']);”>Follow Us</a>
+
+
+
+2. An event to track a clickthrough on a sponsor link. This will be used both on interstitials and on the text-based banner ads.
+
+<a href=”tktktk” onClick=”_gaq.push(['_trackEvent', 'Sponsorships', 'Sponsor Link Clickthrough', 'Sponsor1']);”>Follow Us</a>
+
+
+3. An event to track displays of interstitials. This will have to be applied to story links on the headline summary pages.
+
+<a href=”tktktk” onClick=”_gaq.push(['_trackEvent', 'Sponsorships', 'Sponsor Banner Display', 'Sponsor1']);”>Follow Us</a>
+
+
+
+
+
