@@ -1,6 +1,5 @@
 #Beams Server (v0.1.0)
 
-<<<<<<< HEAD
 This is a simple Node.js/Express server module for publishing websites and applications built with the Beams development framework. 
 
 Beams also includes a front-end module and an optional plugin for ad display. Along with the server, these modules are designed to constitute a full-stack development solution for media-rich projects like news sites, video-heavy web apps, blogs, and so on. 
@@ -69,6 +68,4 @@ Peter McKay
 Co-Founder/Chief Product Officer   
 Roscoe Labs   
 April 2, 2014   
-=======
-Coming soon: A simple Node.js server to run Web applications made in the Beams framework.
->>>>>>> 809c1af2512b8527db32b37054ab646c7b4bcca4
+
