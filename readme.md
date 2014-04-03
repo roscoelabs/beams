@@ -59,13 +59,15 @@ If you've installed the optional Forever module, you could also start by typing:
 
 After starting, beamsserver.js will serve up any web pages in its sibling /html folder. The server renders static web pages for now, though we may add more app-like features over time via Express.
 
-Note that the /html folder has a subfolder of its own, labeled /blog. It's all static as well for now, with the only true blog-like feature being that the subfolder contains a boilerplate XML file to generate an RSS feed for whatever files you add to /blog. (Of course, you'll also have to add them manually as items in the xml outline for them to go out in the feed to subscribers.)
+Note that the /html folder has a subfolder of its own, labeled /blog. It's all static as well for now, with the only true blog-like feature being that the subfolder contains a boilerplate XML file to generate an RSS feed for whatever files you add manually to /blog. (Of course, you'll also have to add them manually as items in the xml outline for them to go out in the feed to subscribers.)
 
-The /blog folder is one area in particular that should be ripe for rapid iteration and expanded functionality. Obviously, we need a login and content-management system to manipulate the other assets in the /blog folder. A fork of Ghost (https://github.com/tryghost/Ghost) or Fargo Publisher (https://github.com/scripting/fargoPublisher) seem like two possible solutions offhand, but I'm certainly open to other suggestions.
+The /blog folder is one area in particular that should be ripe for rapid iteration and expanded functionality, I think. Obviously, we need a login and content-management system to manipulate the other assets in the /blog folder -- and perhaps static pages site-wide as well. There's a high-level admin.html page, which is basically a placeholder or stub, where we might want to put controls for such a system.
+
+In terms of implementing content-management functionality, a fork of Ghost (https://github.com/tryghost/Ghost) or Fargo Publisher (https://github.com/scripting/fargoPublisher) or maybe some Drupal-based solution seem like some possible solutions solutions offhand. But I'm certainly open to other suggestions.
 
 
 Peter McKay   
 Co-Founder/Chief Product Officer   
 Roscoe Labs   
-April 2, 2014   
+April 3, 2014   
 
