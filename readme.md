@@ -55,7 +55,7 @@ To start the server using the command line, go to the directory where you've sto
 
 If you've installed the optional Forever module, you could also start by typing: 
 
-`forever beamsserver.js`
+`forever start beamsserver.js`
 
 After starting, beamsserver.js will serve up any web pages in its sibling /html folder. The server renders static web pages for now, though we may add more app-like features over time via Express.
 
