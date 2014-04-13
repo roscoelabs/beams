@@ -37,7 +37,7 @@ To check which version of Express you're running, use the following command:
 
 Full documentation is available regarding Express at http://expressjs.com/
 
-Finally, although it's not required, I'd recommend installing the Node.js module Forever on your machine. It will keep Beams Server running persistently, restart it automatically after any crashes, improve your uptime, etc.
+Finally, although it's not required, I'd highly recommend installing the Node.js module Forever on your machine. It will keep Beams Server running persistently as a service, restart it automatically after any crashes, improve your uptime, etc.
 
 To install Forever, run: 
 
@@ -53,7 +53,9 @@ To start the server using the command line, go to the directory where you've sto
 
 `node beamsserver.js`
 
-If you've installed the optional Forever module, you could also start by typing: 
+If you launch using that command, server will run only as long as you keep your command line session open. 
+
+Alternatively, if you've installed the optional Forever module as described above, you could instead launch the server to run on a more persistent basis as a Web service by typing: 
 
 `forever start beamsserver.js`
 
@@ -69,5 +71,5 @@ In terms of implementing content-management functionality, a fork of Ghost (http
 Peter McKay   
 Co-Founder/Chief Product Officer   
 Roscoe Labs   
-April 3, 2014   
+April 13, 2014   
 
