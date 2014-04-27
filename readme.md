@@ -61,7 +61,9 @@ Alternatively, if you've installed the optional Forever module as described abov
 
 After starting, beamsserver.js will serve up any web pages in its sibling /html folder. The server renders static web pages for now, though we may add more app-like features over time via Express.
 
-Note that the /html folder has a subfolder of its own, labeled /blog. It's all static as well for now, with the only true blog-like feature being that the subfolder contains a boilerplate XML file to generate an RSS feed for whatever files you add manually to /blog. (Of course, you'll also have to add them manually as items in the xml outline for them to go out in the feed to subscribers.)
+To speed up page loading, the server uses Express to gzip content and Node's built-in fs module to read photo and video files server-side prior to receiving client requests.
+
+Should also note, the /html folder has a subfolder of its own, labeled /blog. It's all static for now, with the only true blog-like feature being that the subfolder contains a boilerplate XML file to generate an RSS feed for whatever files you add manually to /blog. (Of course, you'll also have to add them manually as items in the xml outline for them to go out in the feed to subscribers.)
 
 The /blog folder is one area in particular that should be ripe for rapid iteration and expanded functionality, I think. Obviously, we need a login and content-management system to manipulate the other assets in the /blog folder -- and perhaps static pages site-wide as well. There's a high-level admin.html page, which is basically a placeholder or stub, where we might want to put controls for such a system.
 
@@ -71,5 +73,5 @@ In terms of implementing content-management functionality, a fork of Ghost (http
 Peter McKay   
 Co-Founder/Chief Product Officer   
 Roscoe Labs   
-April 13, 2014   
+April 27, 2014   
 
