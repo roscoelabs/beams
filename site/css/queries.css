@@ -1,0 +1,78 @@
+/*
+
+Beams v0.1 (Alpha)
+Copyright (c) 2014 Peter McKay
+Free to use under the MIT license.
+
+*/
+
+
+@media only screen and (max-width: 3999px) {} /*End 3800px breakpoint*/
+
+@media only screen and (max-width: 3800px) {} /*End 3800px breakpoint*/
+
+@media only screen and (max-width: 3600px) {} /*End 3600px breakpoint*/
+
+@media only screen and (max-width: 3400px) {} /*End 3400px breakpoint*/
+
+@media only screen and (max-width: 3200px) {} /*End 3200px breakpoint*/
+
+@media only screen and (max-width: 3000px) {} /*End 3000px breakpoint*/
+
+@media only screen and (max-width: 2800px) {} /*End 2800px breakpoint*/
+
+@media only screen and (max-width: 2600px) {} /*End 2600px breakpoint*/
+
+@media only screen and (max-width: 2400px) {} /*End 2400px breakpoint*/
+
+@media only screen and (max-width: 2200px) {} /*End 2200px breakpoint*/
+
+@media only screen and (max-width: 2000px) {} /*End 2000px breakpoint*/
+
+@media only screen and (max-width: 1800px) {} /*End tk00px breakpoint*/
+
+@media only screen and (max-width: 1600px) {} /*End tk00px breakpoint*/
+
+@media only screen and (max-width: 1400px) {} /*End 1400px breakpoint*/
+
+@media only screen and (max-width: 1200px) {} /*End 1200px breakpoint*/
+
+@media only screen and (max-width: 1100px) {} /*End 1100px breakpoint*/
+
+@media only screen and (max-width: 1000px) {
+
+  .onecolumn, .twocolumn, .threecolumn, .fourcolumn, .fivecolumn, .sixcolumn, .sevencolumn, .eightcolumn, .ninecolumn, .tencolumn, .elevencolumn, .twelvecolumn, .thirteencolumn, .fourteencolumn, .fifteencolumn, .sixteencolumn, .seventeencolumn, .eighteencolumn, .nineteencolumn, .twentycolumn  {
+    margin: 0 6px 0 6px;  /* Making margin and padding a lil more cozy to preserve proper column breaks... */
+    padding: 0 6px 0 6px;   
+    display: inline-block;
+    float: left;
+   }
+
+  .centered {/*Resetting these properties so they continue to work...*/
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+} /*End 1000px breakpoint*/
+
+@media only screen and (max-width: 800px) {} /*End 800px breakpoint*/
+
+@media only screen and (max-width: 700px) {
+
+  .onecolumn, .twocolumn, .threecolumn, .fourcolumn, .fivecolumn, .sixcolumn, .sevencolumn, .eightcolumn, .ninecolumn, .tencolumn, .elevencolumn, .twelvecolumn, .thirteencolumn, .fourteencolumn, .fifteencolumn, .sixteencolumn, .seventeencolumn, .eighteencolumn, .nineteencolumn, .twentycolumn  {
+
+    margin: 0;
+    padding: 0 5px;  
+    float: none;
+    width: 100%;
+   
+  }
+
+} /*End 700px breakpoint*/
+
+@media only screen and (max-width: 600px) {} /*End 600px breakpoint*/
+
+@media only screen and (max-width: 400px) {} /*End 400px breakpoint*/
+
+@media only screen and (max-width: 200px) {} /*End 200px breakpoint*/
