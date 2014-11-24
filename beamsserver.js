@@ -1,6 +1,6 @@
 /*
 
-Beams v0.1.1 (Alpha)
+Beams v0.1.1 (Beta)
 Copyright (c) 2014 Peter McKay
 Free to use under the MIT license.
 

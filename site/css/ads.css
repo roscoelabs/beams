@@ -1,11 +1,10 @@
 /*
 
-Beams Server v0.1.0
+Beams Server v0.1.1 (Beta)
 Copyright (c) 2014, Peter McKay
 Free to use under MIT license
 
 */
-
 
 
 #fade { 
@@ -30,37 +29,30 @@ Free to use under MIT license
 }
 
 .sponsorad { /*These properties make the interstitial ad responsive*/
-  border: 3px solid white;
-  background: url('../img/red800.png');
-  background-size: 90% auto;
-  background-repeat: no-repeat;
-  background-position: center 40%;
-  padding: 3px; 
+  border: 2px solid white;
+  padding: 1px; 
   position: fixed;
   top: 7.5%;
   left: 7.5%;
   width: 85%;
   height: auto;
-  min-height: 85%;
-  background-color: #CFCFCF;
-  color: #5E5E5E
+  min-height: 67%;
+  background: #D8D8F2
 }
 
-
-.sponsorad span { /*Styling for the phrase "A message from this week's sponsor..." */
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  font-style: italic;
-  max-width: 60%;
-}
-
-.sponsorad a:link { /* Styling the "close" link... */
-  color: #5E5E5E;
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  margin-left: 3em;
-}
+.sponsorad * { /* Helps prevent any elements from overflowing out of the ad */
+  max-width: 100%; 
+  max-height: 100%
+  } 
 
 
+.adcloselink {
+  display: block;
+  padding: 0.5em;
+  border-bottom: 1px solid white
+  }
+  
+.adcloselink a {
+    float: right; 
+    margin-bottom: 0.25em
+  }

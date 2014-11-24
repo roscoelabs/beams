@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0">
+
+<channel>
+
+  <title><!-- Site name goes here --></title>
+  <link><!-- Homepage url goes here --></link>
+  <description><!-- Shorthand description of the site goes here. --></description>
+
+  <item> <!-- Tags and metadata here for an individual blog post or web page-->
+    <title></title>
+    <link></link>
+    <description></description>
+  </item>
+
+  <item> <!-- Tags and metadata here for another individual blog post or web page-->
+    <title></title>
+    <link></link>
+    <description></description>
+  </item>
+
+</channel>
+
+</rss>
+
