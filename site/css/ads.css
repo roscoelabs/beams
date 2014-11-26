@@ -1,0 +1,55 @@
+/*
+
+Beams Server v0.1.1 (Beta)
+Copyright (c) 2014, Peter McKay
+Free to use under MIT license
+
+*/
+
+
+#fade { 
+  /* Blacks out content during ad display. A hat tip to Brett DeWoody of Digital Wax Works (http://www.DigitalWaxWorks.com) for this piece... */
+  display: none;
+  background-color: #000;
+  position: fixed; 
+  left: 0; 
+  top: 0;
+  width: 100%; height: 100%;
+  opacity: .70;
+  z-index: 1000000;
+}
+
+#popupBlock {/* Sets positioning for ad... */
+  display: none;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  z-index: 1000001;
+}
+
+
+.adcloselink {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.75em;
+  text-align: right;
+  padding: 0.5em;
+  color: white;
+}
+
+.adcontainer {
+  position: fixed;
+  top: 2.75em;
+  right: 5%;
+  width: 90%;
+  border: 2px dotted blue;
+  height: auto;
+  max-height: 98%;
+  overflow: auto;
+  border: 2px solid white;
+  padding: 1.5em;
+  background-color: #CACACA
+}
+
