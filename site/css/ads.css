@@ -21,12 +21,17 @@ Free to use under MIT license
 
 #popupBlock {/* Sets positioning for ad... */
   display: none;
+<<<<<<< HEAD
+=======
+  float: left;
+>>>>>>> 97addc73b11d8a7d52dc3e810a9507926e877726
   position: fixed;
   top: 0; 
   left: 0;
   z-index: 1000001;
 }
 
+<<<<<<< HEAD
 
 .adcloselink {
   position: fixed;
@@ -53,3 +58,33 @@ Free to use under MIT license
   background-color: #CACACA
 }
 
+=======
+.sponsorad { /*These properties make the interstitial ad responsive*/
+  border: 2px solid white;
+  padding: 1px; 
+  position: fixed;
+  top: 7.5%;
+  left: 7.5%;
+  width: 85%;
+  height: auto;
+  min-height: 67%;
+  background: #D8D8F2
+}
+
+.sponsorad * { /* Helps prevent any elements from overflowing out of the ad */
+  max-width: 100%; 
+  max-height: 100%
+  } 
+
+
+.adcloselink {
+  display: block;
+  padding: 0.5em;
+  border-bottom: 1px solid white
+  }
+  
+.adcloselink a {
+    float: right; 
+    margin-bottom: 0.25em
+  }
+>>>>>>> 97addc73b11d8a7d52dc3e810a9507926e877726
