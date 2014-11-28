@@ -22,23 +22,70 @@ Beams v0.1.1 is a beta release with the following features:
 
 To implement Beams, you'll need a computer to use as a server that has the following software installed.
 
--**Node.js.** Popular server-side JavaScript platform that uses Google's V8 engine.
+-**Node.js v0.10.26 or later.** Popular server-side JavaScript platform that uses Google's V8 engine. Current version is 0.10.33 as of this writing.
 
--**Express.** Add-on Node.js module for building full-featured Web apps.
+- **npm v1.4.3 or later.** The node package manager. Helps add modules that enhance functionality of the stock version of Node.js. *((Does this really require a separate install? Check offline.))*
 
--**Forever.** Add-on Node.js module that keeps the server running persistently.
+-**Express v4.10.4 or later.** Add-on Node.js module for building full-featured Web apps.
+
+-**Forever v0.10.11 or later.** Add-on Node.js module that keeps the server running persistently.
 
 We'll walk through step-by-step installation of these required Node tools in subsequent sections of this document.
 
-Optionally, we recommend that you also install the following software on your machine, though it's not needed to get up and running initially:
+Optionally, we recommend that you install the following software on your machine as well, though it's not requried to get up and running:
 
--**Ubuntu v12.04 or v14.04.** These are the operating systems on the computers we've tested and used Beams on so far at Roscoe Labs. The software should work well on other Linux distros, Windows, or OS X as well, however. For full info on Ubuntu, visit http://www.ubuntu.com
+-**Ubuntu v12.04 LTS or later.** This is the operating system we've tested Beams on, and we run it on our production server for roscoelabs.com as well. For full info on Ubuntu, visit http://www.ubuntu.com 
 
 -**Nginx.** A reverse-proxy tool. Useful if you want to integrate Beams with a CMS like WordPress or Drupal running on a separate server. For full info on Nginx, visit http://www.ubuntu.com
 
 -**MongoDB.** Open tool for building and managing databases. For full info, see http://www.mongodb.org/
 
 ###Server Setup
+
+Of course, the first step is to install Node.js on your machine. There are a number of installation methods documented around the Web, but we'll walk through a few good ones here briefly. 
+
+On our Ubuntu test servers for v0.1.1, we installed the current versions of both Node and npm in one bundle using the following commands. (The second line references a server maintained by the enterprise software company Nodesource.)
+
+`sudo apt-get curl`
+
+`curl -sL https://deb.nodesource.com/setup | sudo bash -`
+
+`sudo apt-get install nodejs`
+
+An alternative, even easier command-line method that works follows below. This one involves installing Node.js and npm separately:
+
+`sudo apt-get install node`
+
+`sudo apt-get install npm`
+
+Only downside of the latter method is you don't get the very latest versions installed, but they will run just fine. As of this writing, this method gets you node v0.10.26 versus the current v0.10.33.
+
+If you're running a different OS, or if you prefer to use a desktop download over command line, the current version of Node bundled with npm is available for download via the Node project homepage at http://nodejs.org/download/  Page includes install files for OS X, Windows, and Linux.
+
+
+
+
+
+Following method installs Node.js and npm, though not the latest versions:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+There are also a few different methods to install from the command line documented on various sites around on the Web. 
+
+http://bit.ly/1vlVJDL
+
+
 
 ###The Ultraresponsive Grid
 
