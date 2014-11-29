@@ -156,7 +156,7 @@ table {
 
 .onecolumn, .twocolumn, .threecolumn, .fourcolumn, .fivecolumn, .sixcolumn, .sevencolumn, .eightcolumn, .ninecolumn, .tencolumn, .elevencolumn, .twelvecolumn, .thirteencolumn, .fourteencolumn, .fifteencolumn, .sixteencolumn, .seventeencolumn, .eighteencolumn, .nineteencolumn, .twentycolumn  {
   margin: 0 8px 0 8px;
-  padding: 0 8px 0 8px; /*setting these in pixels for consistency in case they're nested within each other*/   
+  padding: 0 8px 0 8px;    
   display: inline-block;
   float: left;
 }
