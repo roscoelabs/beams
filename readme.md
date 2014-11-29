@@ -80,7 +80,7 @@ For a fuller list of forever commands, including options to manage logs and so o
 
 `forever --help`
 
-###Using the "site" folder
+###Using the "Site" Folder
 
 Once your Beams server is running, it will render the html files in the folder labeled "site" as Web pages, using the CSS, JavaScript and media files in the related subfolders. You can edit your site by adding or changing files in the "site" folder at any time.
 
@@ -98,7 +98,7 @@ A few other additional notes bout the "site" folder:
 
 ###The Ultraresponsive Grid
 
-In the folder site/css, you'll find the files for Beams 0.1.1's responsive layout. It's based on a 20-column, 4,000-pixel grid, with 16 pixel gutters. Total width of the grid is approximately the physical screen size of a 48-inch TV, yet pages will also scale down smoothly using media queries to fit any other size screen right down to smart phone as well.
+In the folder site/css, you'll find the files for Beams 0.1.1's responsive layout. It's based on a 20-column, 4,000-pixel grid, with 16-pixel gutters. Total width of the grid is approximately the physical screen size of a 48-inch TV, yet pages will also scale down smoothly using media queries to fit any other size screen right down to smart phone as well.
 
 The basic building block of pages is full-width containers with the class "beams" that act as rows to put several child elements in, like so...
 
@@ -237,7 +237,9 @@ You'll see sample trackers on the demo html pages we've included in Beams Ads. F
 Finally, we must tip our hats to Brett DeWoody (http://github.com/brettdewoody) and Klaus Hartl (https://github.com/carhartl), whose previous open-source work on interstitials and cookies, respectively, provided much of the foundation for our ad features. Essentially, we've mashed up those two guys' projects, then added in responsive design and Google tracking.
 
 
+
 <p align='center'>* * * * *</p>
+
 
 
 
