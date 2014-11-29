@@ -237,10 +237,8 @@ You'll see sample trackers on the demo html pages we've included in Beams Ads. F
 Finally, we must tip our hats to Brett DeWoody (http://github.com/brettdewoody) and Klaus Hartl (https://github.com/carhartl), whose previous open-source work on interstitials and cookies, respectively, provided much of the foundation for our ad features. Essentially, we've mashed up those two guys' projects, then added in responsive design and Google tracking.
 
 
-<p id='secdivider'>* * * * *</p>
-<style type='text/css'>
-  #secdivider {display: block; text-align: center}
-</style>
+<p align='center'>* * * * *</p>
+
 
 
 That's it for now. Again, we're eager to have folks start using Beams, give their feedback, and participate in its development as a free project under MIT license. Our GitHub page is a great way to do that (http://github.com/roscoelabs), and we also invite folks to join the Beams Working Group listserv at http://bit.ly/1rF4j0G
@@ -249,7 +247,7 @@ At Roscoe Labs, we have a mantra: "Open media. Open communities." We really see 
 
 Best,
 
-<p>Peter McKay</p>
-<p>Co-Founder/Chief Product Officer</p>
-<p>Roscoe Labs</p>
-<p>Twitter: @peteramckay</p>
+Peter McKay  
+Co-Founder/Chief Product Officer  
+Roscoe Labs  
+Twitter: @peteramckay  
