@@ -10,37 +10,37 @@ Roscoe Labs is the lead developer of Beams, which is free to use under MIT Licen
 
 Beams 0.1.1 is a beta release with the following features:
 
--**Node.js/Express Web server.** A simple server script to get your project up and running quickly. A basic website file structure is included for serving static pages of content, while the inclusion of the Node.js Express module also allows for buildout of more full-featured Web apps if need be.
+- **Node.js/Express Web server.** A simple server script to get your project up and running quickly. A basic website file structure is included for serving static pages of content, while the inclusion of the Node.js Express module also allows for buildout of more full-featured Web apps if need be.
 
--**Ultraresponsive layout.** Layout is based on a 20-column, 4,000-pixel grid with 16-pixel gutters. This allows elements to resize elegantly using CSS3 media queries for any screen from a large-screen TV to a smartphone. Video players are also responsive, thanks to the Fitvids.js plugin. Players for embedded YouTube videos, Vimeo, and self-hosted HTML5 video are supported.
+- **Ultraresponsive layout.** Layout is based on a 20-column, 4,000-pixel grid with 16-pixel gutters. This allows elements to resize elegantly using CSS3 media queries for any screen from a large-screen TV to a smartphone. Video players are also responsive, thanks to the Fitvids.js plugin. Players for embedded YouTube videos, Vimeo, and self-hosted HTML5 video are supported.
 
--**Default typefaces from Google Fonts.** We use Merriweather for headlines and Open Sans for pretty much everything else. Of course, implementers should feel free to change these to whatever else you want if necessary, use locally hosted fonts on your own server, et cetera.
+- **Default typefaces from Google Fonts.** We use Merriweather for headlines and Open Sans for pretty much everything else. Of course, implementers should feel free to change these to whatever else you want if necessary, use locally hosted fonts on your own server, et cetera.
 
--**jQuery 2.1.1.** Beams includes a locally hosted copy so your project can quickly call functions from the popular JavaScript library.
+- **jQuery 2.1.1.** Beams includes a locally hosted copy so your project can quickly call functions from the popular JavaScript library.
 
--**Interstitial ad display and ad tracking.**  Beams allows you to display a popup ad on any page, set cookies, and track views using Google Analytics. You can also turn ad display off if you don't want to interfere with users' browsing.
+- **Interstitial ad display and ad tracking.**  Beams allows you to display a popup ad on any page, set cookies, and track views using Google Analytics. You can also turn ad display off if you don't want to interfere with users' browsing.
 
 ###Usage
 
 To implement Beams, you'll need a computer to use as a server that has the following software installed.
 
--**Node.js 0.10.26 or later.** Popular server-side JavaScript platform that uses Google's V8 engine. Current version is 0.10.33 as of this writing.
+- **Node.js 0.10.26 or later.** Popular server-side JavaScript platform that uses Google's V8 engine. Current version is 0.10.33 as of this writing.
 
 - **npm 1.4.3 or later.** The node package manager. Helps add modules that enhance functionality of the stock version of Node.js. 
 
--**Express 4.10.4 or later.** Add-on Node.js module for building full-featured Web apps.
+- **Express 4.10.4 or later.** Add-on Node.js module for building full-featured Web apps.
 
--**Forever 0.10.11 or later.** Add-on Node.js module that keeps the server running persistently.
+- **Forever 0.10.11 or later.** Add-on Node.js module that keeps the server running persistently.
 
 We'll walk through step-by-step installation of these required Node tools in subsequent sections of this document.
 
 Optionally, installing the following software on your machine may provide additional functionality to your Beams site, though it's not required to get up and running:
 
--**Ubuntu 12.10 or later.** Ubuntu is the operating system we've tested Beams on, and we run it on our production server for roscoelabs.com as well. For full info on Ubuntu, visit http://www.ubuntu.com (If Ubuntu isn't your cup of tea, no worries. Beams should work fine on other Linux distros, OS X, or Windows as well.)
+- **Ubuntu 12.10 or later.** Ubuntu is the operating system we've tested Beams on, and we run it on our production server for roscoelabs.com as well. For full info on Ubuntu, visit http://www.ubuntu.com (If Ubuntu isn't your cup of tea, no worries. Beams should work fine on other Linux distros, OS X, or Windows as well.)
 
--**MongoDB.** Open tool for building and managing databases. For full info, see http://www.mongodb.org/
+- **MongoDB.** Open tool for building and managing databases. For full info, see http://www.mongodb.org/
 
--**Nginx.** A reverse-proxy tool. Useful if you want to integrate Beams with a CMS like WordPress or Drupal running on a separate server. Please note, however, this is a fairly advanced option. For full info on Nginx, visit http://www.ubuntu.com
+- **Nginx.** A reverse-proxy tool. Useful if you want to integrate Beams with a CMS like WordPress or Drupal running on a separate server. Please note, however, this is a fairly advanced option. For full info on Nginx, visit http://www.ubuntu.com
 
 ###Server Setup
 
