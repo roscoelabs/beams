@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"><!-- Helps with responsive display -->
-  <title><!-- Page title goes here --></title>
+  <title>Ad</title>
   <link rel="icon" type="image/png" href="img/favicon.png" /> <!-- An image to display as your site icon in the browser bar. -->
   <link href="css/layout.css" rel="stylesheet" type="text/css" />
   <link href="http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:300italic,700italic,700,300" rel="stylesheet" type="text/css">
@@ -26,103 +26,39 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+  
+    <script type="text/javascript">
+
+    $.cookie('Ad_View', '1', { path: '/' });
+
+  </script> 
+  
 <script type="text/javascript">
 	
 	  $(document).ready(function(){
 
-        $.cookie('Ad_View', '1', { path: '/' });
-
        });
 
   </script>
-  </div><!-- End sponsorad -->
   
+  
+  </head>
 
-</head>
 
+<body>
 
-
-<<<<<<< HEAD
-<body onClick="_gaq.push(['_trackEvent', 'Sponsorships', 'Interstitial Shown', 'Sponsor1']);">
-
-        <a href="#" onClick="$().interstitial('close'); return true;" class="adcloselink">[X] CLOSE</a>
+        <span class="adcloselink"><a href="#" onClick="$().interstitial('close'); return true; _gaq.push(['_trackEvent', 'Sponsorships', 'Interstitial Shown', 'Sponsor1']);">[X] CLOSE</a></span>
         
         <div class="adcontainer">
         
            <img src="img/red800.png" alt="Roscoe Labs logo">
            <h3 class="margin-top">Open media. Open communities.</h3> 
-           <style>
+           <style type="text/css">
 			   img {width: 50%; min-width: 150px}
 			   .adcontainer {text-align: center}
 		   <style>
 
         </div><!-- End ad container -->
-
-
-
-
-
-
-<!-- 
-
-
-  <div class="sponsorad" >
-
-        
-        
-        
-        
-
-        <style type="text/css">
-       
-          img {
-			  display: block; 
-              margin: 0 auto;
-              padding-top: 2.5em;
-			  max-width: 750px; 
-			  height: auto
-			 }
-			 
-          h3 {text-align: center}
       
-        </style>
-       
-  </div><!-- End sponsor ad-->
-
-
-
-
-
-=======
-<body>
-
-  <div class="sponsorad" onClick="_gaq.push(['_trackEvent', 'Sponsorships', 'Interstitial Shown', 'Sponsor1']);">
-
-        <span class="adcloselink">A message from this week's sponsor... <a href="#" onClick="$().interstitial('close'); return true;">[X] CLOSE</a></span>
-        
-        
-
-
-
-       <img src="img/red800.png" alt="Roscoe Labs logo">
-
-       <h3 class="margin-top padded-top">Open media. Open communities.</h3>
-       
-       <style type="text/css">
-       
-         img {
-			 display: block; 
-             margin: 0 auto;
-             padding-top: 2.5em;
-			 max-width: 750px; 
-			 height: auto
-			 }
-			 
-       h3 {text-align: center}
-      
-       </style>
-  
->>>>>>> 97addc73b11d8a7d52dc3e810a9507926e877726
-  
 </body>
 </html>

@@ -26,7 +26,7 @@ To implement Beams, you'll need a computer to use as a server that has the follo
 
 -**Node.js 0.10.26 or later.** Popular server-side JavaScript platform that uses Google's V8 engine. Current version is 0.10.33 as of this writing.
 
-- **npm 1.4.28 or later.** The node package manager. Helps add modules that enhance functionality of the stock version of Node.js. 
+- **npm 1.4.3 or later.** The node package manager. Helps add modules that enhance functionality of the stock version of Node.js. 
 
 -**Express 4.10.4 or later.** Add-on Node.js module for building full-featured Web apps.
 
@@ -34,13 +34,13 @@ To implement Beams, you'll need a computer to use as a server that has the follo
 
 We'll walk through step-by-step installation of these required Node tools in subsequent sections of this document.
 
-Optionally, we recommend that you install the following software on your machine as well, though it's not requried to get up and running:
+Optionally, installing the following software on your machine may provide additional functionality to your Beams site, though it's not required to get up and running:
 
--**Ubuntu 14.04 LTS or later.** Ubuntu is the operating system we've tested Beams on, and we run it on our production server for roscoelabs.com as well. For full info on Ubuntu, visit http://www.ubuntu.com 
-
--**Nginx.** A reverse-proxy tool. Useful if you want to integrate Beams with a CMS like WordPress or Drupal running on a separate server. For full info on Nginx, visit http://www.ubuntu.com
+-**Ubuntu 12.10 or later.** Ubuntu is the operating system we've tested Beams on, and we run it on our production server for roscoelabs.com as well. For full info on Ubuntu, visit http://www.ubuntu.com (If Ubuntu isn't your cup of tea, no worries. Beams should work fine on other Linux distros, OS X, or Windows as well.)
 
 -**MongoDB.** Open tool for building and managing databases. For full info, see http://www.mongodb.org/
+
+-**Nginx.** A reverse-proxy tool. Useful if you want to integrate Beams with a CMS like WordPress or Drupal running on a separate server. Please note, however, this is a fairly advanced option. For full info on Nginx, visit http://www.ubuntu.com
 
 ###Server Setup
 
@@ -74,12 +74,12 @@ If you ever need to stop the server, type:
 
 To restart: 
 
-`forever stop beamsserver.js --watch`
+`forever restart beamsserver.js --watch`
 
 For a fuller list of forever commands, including options to manage logs and so on, type: 
 
 `forever --help`
-
+ 
 ###Using the "Site" Folder
 
 Once your Beams server is running, it will render the html files in the folder labeled "site" as Web pages, using the CSS, JavaScript and media files in the related subfolders. You can edit your site by adding or changing files in the "site" folder at any time.
