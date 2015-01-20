@@ -1,2 +1,112 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Grid Test</title>
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/queries.css">
+  <link href="http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:300italic,700italic,700,300" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/jquery.fitvids.js"></script>
+  <link rel="prefetch" href="http://github.com/roscoelabs">
+  <script>
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38626596-2', 'roscoelabs.com');
+    ga('send', 'pageview');
+
+  </script>
+
+  <script>
+    $(document).ready(function() {
+  
+      $("div").fitVids();
+      
+
+    }); //end ready
+  </script>
+</head>
+<body>
+
+  
+  
+  
+  <style>
+  
+  .onecolumn, .twocolumn, .threecolumn, .fourcolumn, .fivecolumn, .sixcolumn, .sevencolumn, .eightcolumn, .ninecolumn, .tencolumn, .elevencolumn, .twelvecolumn, .thirteencolumn, .fourteencolumn, .fifteencolumn, .sixteencolumn, .seventeencolumn, .eighteencolumn, .nineteencolumn, .twentycolumn {
+	  
+	    color: white;
+	    background-color: #575757;
+	    border: 1px solid #C4C4C4;
+	    text-align: center
+	    
+	    }
+ 
+ 
+      .beam {border: 2px solid red}
+  
+      #testtext {
+		  background-color: white;
+		  color: black;
+		  text-align: left;
+		  border: none;
+		  margin-bottom: 2em
+		  
+		  }
+  
+  </style>
+  
+  
+  <div class="twentycolumn" id="testtext">
+    <h1>Test page for responsive grid</h1>
+    <p>A test page for the Beams framework's 20-column responsive grid. Full-width container with the CSS class "beam" has a red frame below. Child elements vary from 1-20 columns in width.</p>
+  </div> <!-- End 20col-->
+  
+
+
+   <div class="beam">
+
+    <h6 class="onecolumn">1</h6>
+    <h6 class="nineteencolumn">19</h6>
+    <h6 class="twocolumn">2</h6>
+    <h6 class="fifteencolumn">15</h6>
+    <h6 class="threecolumn">3</h6>
+    <h6 class="fourcolumn">4</h6>
+    <h6 class="sixteencolumn">16</h6>
+    <h6 class="fivecolumn">5</h6>    
+    <h6 class="sixcolumn">6</h6>
+    <h6 class="ninecolumn">9</h6>
+    <h6 class="sevencolumn">7</h6>
+    <h6 class="thirteencolumn">13</h6>
+    <h6 class="eightcolumn">8</h6>
+    <h6 class="twocolumn">2</h6>
+    <h6 class="tencolumn">10</h6>
+    <h6 class="eighteencolumn">18</h6>
+    <h6 class="twocolumn">2</h6>
+    <h6 class="seventeencolumn">17</h6>
+    <h6 class="threecolumn">3</h6>
+    <h6 class="fourteencolumn">14</h6>    
+    <h6 class="sixcolumn">6</h6>
+    <h6 class="twelvecolumn">12</h6>
+    <h6 class="eightcolumn">8</h6>
+    <h6 class="elevencolumn">11</h6>
+    <h6 class="ninecolumn">9</h6>
+    <h6 class="twentycolumn">20</h6>
+
+
+   
+   </div><!-- End beam -->
+
+
+
+</body>
+</html>
+
 

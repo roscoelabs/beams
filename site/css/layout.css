@@ -1,7 +1,7 @@
 /*
 
-Beams v0.1.1 (Beta)
-Copyright (c) 2014 Peter McKay
+Beams v0.1.2 (Beta)
+Copyright (c) 2014, 2015 Peter McKay
 Free to use under the MIT license.
 
 
@@ -142,64 +142,61 @@ table {
 #Grid
 --------------------------------------*/
 
-.beam {/* This is basic building block of the 20-column, 4000px grid... */
-  position: relative;
+.beam {
   width: 100%;
-  max-width: 4000px;
-  margin: 0 auto;
-  float: left;
-  display: block;
-  clear: both;
+  margin: 0;
+  display: inline-block;
 }
-
-/*Dividing beams into columns...*/
 
 .onecolumn, .twocolumn, .threecolumn, .fourcolumn, .fivecolumn, .sixcolumn, .sevencolumn, .eightcolumn, .ninecolumn, .tencolumn, .elevencolumn, .twelvecolumn, .thirteencolumn, .fourteencolumn, .fifteencolumn, .sixteencolumn, .seventeencolumn, .eighteencolumn, .nineteencolumn, .twentycolumn  {
-  margin: 0 8px 0 8px;
-  padding: 0 8px 0 8px;    
-  display: inline-block;
-  float: left;
+  margin: 0 0.25%; /* Slight margin on sides to create gutters */
+  padding: 0 0.25%; /* Slight margin on sides to create gutters */
+  float: left;    
+  display: inline-block;  
+  position: relative;
 }
 
-.onecolumn {width: 3%}
+.onecolumn {width: 4.5%}
 
-.twocolumn {width: 8%}
+.twocolumn {width: 9.5%}
 
-.threecolumn {width: 13%}
+.threecolumn {width: 14.5%}
 
-.fourcolumn {width: 18%}
+.fourcolumn {width: 19.5%}
 
-.fivecolumn {width: 23%}
+.fivecolumn {width: 24.5%}
 
-.sixcolumn {width: 28%}
+.sixcolumn {width: 29.5%}
 
-.sevencolumn {width: 33%}
+.sevencolumn {width: 34.5%}
 
-.eightcolumn {width: 38%}
+.eightcolumn {width: 39.5%}
 
-.ninecolumn {width: 43%}
+.ninecolumn {width: 44.5%}
 
-.tencolumn {width: 48%}
+.tencolumn {width: 49.5%}
 
-.elevencolumn {width: 53%}
+.elevencolumn {width: 54.5%}
 
-.twelvecolumn {width: 58%}
+.twelvecolumn {width: 59.5%}
 
-.thirteencolumn {width: 63%}
+.thirteencolumn {width: 64.5%}
 
-.fourteencolumn {width: 68%}
+.fourteencolumn {width: 69.5%}
 
-.fifteencolumn {width: 73%}
+.fifteencolumn {width: 74.5%}
 
-.sixteencolumn {width: 78%}
+.sixteencolumn {width: 79.5%}
 
-.seventeencolumn {width: 83%}
+.seventeencolumn {width: 84.5%}
 
-.eighteencolumn {width: 88%}
+.eighteencolumn {width: 89.5%}
 
-.nineteencolumn {width: 93%}
+.nineteencolumn {width: 94.5%}
 
-.twentycolumn {width: 98%}
+.twentycolumn {
+  width: 99.5%;
+  }
 
 
 

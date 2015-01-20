@@ -1,7 +1,7 @@
 /*
 
-Beams v0.1.1 (Beta)
-Copyright (c) 2014 Peter McKay
+Beams v0.1.2 (Beta)
+Copyright (c) 2014, 2015 Peter McKay
 Free to use under the MIT license.
 
 */
@@ -42,10 +42,6 @@ Free to use under the MIT license.
 @media only screen and (max-width: 1000px) {
 
   .onecolumn, .twocolumn, .threecolumn, .fourcolumn, .fivecolumn, .sixcolumn, .sevencolumn, .eightcolumn, .ninecolumn, .tencolumn, .elevencolumn, .twelvecolumn, .thirteencolumn, .fourteencolumn, .fifteencolumn, .sixteencolumn, .seventeencolumn, .eighteencolumn, .nineteencolumn, .twentycolumn  {
-    margin: 0 6px 0 6px;  /* Making margin and padding a lil more cozy to preserve proper column breaks... */
-    padding: 0 6px 0 6px;   
-    display: inline-block;
-    float: left;
    }
 
   .centered {/*Resetting these properties so they continue to work...*/
@@ -63,7 +59,7 @@ Free to use under the MIT license.
   .onecolumn, .twocolumn, .threecolumn, .fourcolumn, .fivecolumn, .sixcolumn, .sevencolumn, .eightcolumn, .ninecolumn, .tencolumn, .elevencolumn, .twelvecolumn, .thirteencolumn, .fourteencolumn, .fifteencolumn, .sixteencolumn, .seventeencolumn, .eighteencolumn, .nineteencolumn, .twentycolumn  {
 
     margin: 0;
-    padding: 0 5px;  
+    padding: 0 1%;  
     float: none;
     width: 100%;
    
