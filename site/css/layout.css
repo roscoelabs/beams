@@ -97,14 +97,6 @@ em {font-style: italic}
 
 strong {font-weight: bold}
 
-
-.video {
-  width: 100vw;
-  height: auto;
-  max-width: 100%;
-  overflow: hidden;
-}
-
 img, video, .video {
   max-width: 100%;
   object-fit: cover;
