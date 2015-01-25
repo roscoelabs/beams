@@ -1,7 +1,7 @@
 /*
 
 Beams v0.1.2 (Beta)
-Copyright (c) 2014, 2015 Peter McKay
+Copyright (c) 2014-2015 Peter McKay
 Free to use under the MIT license.
 
 
@@ -97,13 +97,18 @@ em {font-style: italic}
 
 strong {font-weight: bold}
 
-img {max-width: 100%}
 
-video {
-  width: 100%; 
+.video {
+  width: 100vw;
   height: auto;
-  background: black;
-  border: 1px solid black
+  max-width: 100%;
+  overflow: hidden;
+}
+
+img, video, .video {
+  max-width: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 hr {
@@ -144,58 +149,58 @@ table {
 
 .beam {
   width: 100%;
-  margin: 0;
   display: inline-block;
+  float: left;
 }
 
 .onecolumn, .twocolumn, .threecolumn, .fourcolumn, .fivecolumn, .sixcolumn, .sevencolumn, .eightcolumn, .ninecolumn, .tencolumn, .elevencolumn, .twelvecolumn, .thirteencolumn, .fourteencolumn, .fifteencolumn, .sixteencolumn, .seventeencolumn, .eighteencolumn, .nineteencolumn, .twentycolumn  {
-  margin: 0 0.25%; /* Slight margin on sides to create gutters */
-  padding: 0 0.25%; /* Slight margin on sides to create gutters */
-  float: left;    
+  margin: 0;
+  padding:  0.5em 1.5% 0.5em 1.5%; /* Creates internal gutters within content containers*/
   display: inline-block;  
   position: relative;
+  float: left;    
 }
 
-.onecolumn {width: 4.5%}
+.onecolumn {width: 5%}
 
-.twocolumn {width: 9.5%}
+.twocolumn {width: 10%}
 
-.threecolumn {width: 14.5%}
+.threecolumn {width: 15%}
 
-.fourcolumn {width: 19.5%}
+.fourcolumn {width: 20%}
 
-.fivecolumn {width: 24.5%}
+.fivecolumn {width: 25%}
 
-.sixcolumn {width: 29.5%}
+.sixcolumn {width: 30%}
 
-.sevencolumn {width: 34.5%}
+.sevencolumn {width: 35%}
 
-.eightcolumn {width: 39.5%}
+.eightcolumn {width: 40%}
 
-.ninecolumn {width: 44.5%}
+.ninecolumn {width: 45%}
 
-.tencolumn {width: 49.5%}
+.tencolumn {width: 50%}
 
-.elevencolumn {width: 54.5%}
+.elevencolumn {width: 55%}
 
-.twelvecolumn {width: 59.5%}
+.twelvecolumn {width: 60%}
 
-.thirteencolumn {width: 64.5%}
+.thirteencolumn {width: 65%}
 
-.fourteencolumn {width: 69.5%}
+.fourteencolumn {width: 70%}
 
-.fifteencolumn {width: 74.5%}
+.fifteencolumn {width: 75%}
 
-.sixteencolumn {width: 79.5%}
+.sixteencolumn {width: 80%}
 
-.seventeencolumn {width: 84.5%}
+.seventeencolumn {width: 85%}
 
-.eighteencolumn {width: 89.5%}
+.eighteencolumn {width: 90%}
 
-.nineteencolumn {width: 94.5%}
+.nineteencolumn {width: 95%}
 
 .twentycolumn {
-  width: 99.5%;
+  width: 100%;
   }
 
 
@@ -264,8 +269,8 @@ ol {list-style: decimal}
 
 .button.full-width, button.full-width, input[type="submit"].full-width, input[type="reset"].full-width, input[type="button"].full-width {
   width: 100%;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: 0;
+  padding-right: 0;
   text-align: center; 
 }
 
@@ -365,9 +370,7 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 
 .sidebar {}
 
-.sidebar.left {}
-
-.sidebar.right {}
+.mainbar {}
 
 .centered {
   float: none; 

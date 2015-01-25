@@ -1,7 +1,7 @@
 /*
 
 Beams v0.1.2 (Beta)
-Copyright (c) 2014, 2015 Peter McKay
+Copyright (c) 2014-2015 Peter McKay
 Free to use under the MIT license.
 
 */
@@ -44,28 +44,38 @@ Free to use under the MIT license.
   .onecolumn, .twocolumn, .threecolumn, .fourcolumn, .fivecolumn, .sixcolumn, .sevencolumn, .eightcolumn, .ninecolumn, .tencolumn, .elevencolumn, .twelvecolumn, .thirteencolumn, .fourteencolumn, .fifteencolumn, .sixteencolumn, .seventeencolumn, .eighteencolumn, .nineteencolumn, .twentycolumn  {
    }
 
+
+  .sidebar {float: right; width: 35%}
+  
+  .mainbar {width: 65%}
+
   .centered {/*Resetting these properties so they continue to work...*/
     float: none;
     display: block;
     margin: 0 auto;
   }
+  
 
 } /*End 1000px breakpoint*/
+
 
 @media only screen and (max-width: 800px) {} /*End 800px breakpoint*/
 
 @media only screen and (max-width: 700px) {
+  
+  .beam {display: block}
 
   .onecolumn, .twocolumn, .threecolumn, .fourcolumn, .fivecolumn, .sixcolumn, .sevencolumn, .eightcolumn, .ninecolumn, .tencolumn, .elevencolumn, .twelvecolumn, .thirteencolumn, .fourteencolumn, .fifteencolumn, .sixteencolumn, .seventeencolumn, .eighteencolumn, .nineteencolumn, .twentycolumn  {
 
-    margin: 0;
-    padding: 0 1%;  
     float: none;
-    width: 100%;
-   
-  }
-
-} /*End 700px breakpoint*/
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+       
+  } 
+  
+  
+ } /*End 700px breakpoint*/
 
 @media only screen and (max-width: 600px) {} /*End 600px breakpoint*/
 
