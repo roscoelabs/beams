@@ -6,25 +6,21 @@ Free to use under the MIT license.
 
 */
 
-
 var express = require('express');
-var fs = require ('fs');
 var app = express();
 var oneDay = 86400000; // The number of milliseconds in one day...
 
-fs.readFile('/site/img', function (err,data) {
-  if (err) {
-    return console.log(err);
-  }
-  console.log(data);
-}); // Read image files...
+app.route('/site/js').all(function(req, res, next) {
+});
 
-fs.readFile('/site/video', function (err,data) {
-  if (err) {
-    return console.log(err);
-  }
-  console.log(data);
-}); // Read video files...
+app.route('/site/css').all(function(req, res, next) {
+});
+
+app.route('/site/img').all(function(req, res, next) {
+});
+
+app.route('/site/video').all(function(req, res, next) {
+});
 
 app.use(express.static(__dirname + '/site', { maxAge: oneDay })); // Serve up site content...
 

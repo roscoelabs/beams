@@ -1,6 +1,6 @@
 /*
 
-Beams v0.1.2 (Beta)
+Beams v0.1.2 (Beta).
 Copyright (c) 2014-2015 Peter McKay
 Free to use under the MIT license.
 
@@ -99,7 +99,7 @@ strong {font-weight: bold}
 
 img, video, .video {
   max-width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   overflow: hidden;
 }
 

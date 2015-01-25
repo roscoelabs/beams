@@ -1,6 +1,6 @@
 #Beams v0.1.2 (Beta)
 
-Beams is an open, full-stack framework for building media websites, including news sites, blogs, video apps, and so on. 
+Beams is an open, full-stack framework for building media websites, including news sites, blogs, video apps, et cetera. 
 
 This version consolidates what had previously been three separate code repositories -- a server module, an ultraresponsive CSS3 layout, and a plugin for ad display and metrics. The idea is that by putting it all together, in one place, developers should find it much easier to get started using Beams in their projects.
 
@@ -8,7 +8,7 @@ Roscoe Labs is the lead developer of Beams, which is free to use under MIT Licen
 
 ###Features
 
-Beams 0.1.1 is a beta release with the following features:
+Beams v0.1.2 is a beta release with the following features:
 
 - **Node.js/Express Web server.** A simple server script to get your project up and running quickly. A basic website file structure is included for serving static pages of content, while the inclusion of the Node.js Express module also allows for buildout of more full-featured Web apps if need be.
 
