@@ -4,8 +4,6 @@ Beams v0.1.2 (Beta).
 Copyright (c) 2014-2015 Peter McKay
 Free to use under the MIT license.
 
-
-
 -------------------------------------
 
 Table of Content
@@ -23,6 +21,7 @@ Table of Content
 ----------------------------------------
 #Basics & Typography
 --------------------------------------*/
+
 
 *, *:before, *:after { /* Apply a natural box layout model and apply some other basic styles to all elements. H/t Paul Irish and Dave Gamache. */
   box-sizing: border-box;
