@@ -16,7 +16,7 @@ Beams v0.1.2 is a beta release with the following features:
 
 - **Default typefaces from Google Fonts.** We use Merriweather for headlines and Open Sans for pretty much everything else. (Of course, implementers should feel free to change these to something else if your project requires.)
 
-- **jQuery 2.1.3.** Beams includes a locally hosted copy so your project can quickly call functions from the popular JavaScript library.
+- **jQuery 2.1.3.** The framework's `beams-client.js` file includes a full, minified copy of this popular JavaScript library so your project can quickly call functions from it.
 
 ###Usage
 
@@ -32,7 +32,7 @@ To implement Beams, you'll need a computer to use as a server that has the follo
 
 Once all the requisite software is installed on your machine, navigate via the terminal to the directory where the file beamsserver.js is located and enter the following command:
 
-`forever start beamsserver.js --watch`
+`forever start beams-server.js --watch`
 
 That's it. Server should now be running, and you should see a confirmation message in your command line that reads: "Eureka! Server is running at port 80." It should also be watching for file changes, to help on projects where site content is changing frequently.
 
@@ -40,11 +40,11 @@ After starting, beamsserver.js will serve up any web pages in its sibling folder
 
 If you ever need to stop the server, type:
 
-`forever stop beamsserver.js`
+`forever stop beams-server.js`
 
 To restart: 
 
-`forever restart beamsserver.js --watch`
+`forever restart beams-server.js --watch`
  
 ###Using the "Site" Folder
 
@@ -76,7 +76,7 @@ One caveat: Elements with column-based classes ("onecolumn", "twocolumn," and so
 
 To make your YouTube, Vimeo, or self-hosted HTML5 videos resize responsively, just do the following:
 
-- Make sure the head element of your page with videos contains links to the Beams files css/layout.css and js/beamsvids.js. 
+- Make sure the head element of your page with videos contains links to the Beams files css/beams.css and js/beams-client.js. 
 
 - If your video is an embed from YouTube or Vimeo, add the attribute `class="video"` to the iframe markup from the third-party provider. (You can skip this step if you're using self-hosted video.)
  
