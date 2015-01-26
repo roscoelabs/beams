@@ -2,6 +2,14 @@
 
 Beams is an open, full-stack framework for building media websites, including news sites, blogs, video apps, et cetera. 
 
+
+
+http://roscoelabs.com/beams/getting-started.html
+
+
+
+
+
 This version consolidates what had previously been three separate code repositories -- a server module, an ultraresponsive CSS3 layout, and a plugin for ad display and metrics. The idea is that by putting it all together, in one place, developers should find it much easier to get started using Beams in their projects.
 
 Roscoe Labs is the lead developer of Beams, which is free to use under MIT License. We encourage and welcome anyone interested in making the software better to participate in the Beams Working Group at http://bit.ly/1rF4j0G
