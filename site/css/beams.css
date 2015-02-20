@@ -65,6 +65,13 @@ p, ul, ol, .button, label {
   margin-bottom: 1em;  
 }
 
+code {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  background: #EDEDED;
+  padding: 2px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
   line-height: 1.2;
