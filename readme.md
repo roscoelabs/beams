@@ -1,4 +1,4 @@
-#Beams v0.1.2 (Beta)
+#Beams v0.1.3 (Beta)
 
 Beams is an open framework for building media websites, including news sites, blogs, video apps, et cetera. 
 
