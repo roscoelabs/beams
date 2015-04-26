@@ -12,8 +12,10 @@ upstream project {
  
 
 server {
-    listen 443 ssl;
+    listen 443 default;
+    ssl on;
     server_name example.com;
+    server_tokens off;
     ssl_certificate www.example.com.crt; 
     ssl_certificate_key www.example.com.key;
     #Be sure to check file paths on cert and key
@@ -30,12 +32,21 @@ server {
     proxy_set_header X-Forwarded-Proto https;
   }
 
-
-  location ~* \.(css|js|gif|jpe?g|png)$ {
+  location /css/* {
     expires 1h;
+  }
+
+  location /js/* {
+    expires 1h;
+  }
+
+  location /img/* {
+    expires 1h;
+  }
     
   }
   location /api {
     expires 10m;
   }
+  
 }
