@@ -1,4 +1,4 @@
-// Beams v0.1.2 (Beta)
+// Beams v0.1.3 (Beta)
 // Copyright (c) 2014-2015 Peter McKay
 // Free to use under the MIT license.
 

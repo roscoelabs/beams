@@ -14,6 +14,6 @@ var oneDay = 86400000;
 
 app.use(express.static(__dirname + '/site', { maxAge: oneDay })); // Serve up site content...
 
-app.listen(process.env.PORT || 80);
+app.listen(process.env.PORT || 1337);
 
-console.log('Eureka! Server is running at port 80.');
+console.log('Eureka! Server is running at port 1337.');

@@ -4,9 +4,9 @@ Beams is an open framework for building media websites, including news sites, bl
 
 ###Features
 
-Beams v0.1.2 is a beta release with the following features:
+Beams v0.1.3 is a beta release with the following features:
 
-- **Node.js/Express Web server.** A simple, fast server script to get your project up and running quickly. A basic website file structure is also included for serving static pages of content.
+- **Node.js/Express Web server.** A simple, fast, secure server script to get your project up and running quickly. A basic website file structure is also included for serving static pages of content.
 
 - **Ultraresponsive layout.** Layout is based on a 20-column, 4,000-pixel grid. This allows elegant resizing of elements on any size screen, from a large TV down to a smartphone. Video players are also responsive, including support for embedded players for YouTube, Vimeo, and self-hosted HTML5 video.
 
