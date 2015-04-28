@@ -33,8 +33,7 @@ upstream project {
  
 
 server {
-    listen 443 default;
-    ssl on;
+    listen 443 ssl spdy;
     server_name example.com;
     ssl_certificate ../path/to/example.crt; 
     ssl_certificate_key ../path/to/example.key;
