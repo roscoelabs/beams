@@ -1,10 +1,12 @@
-#Beams v0.1.3 (Beta)
+#Beams v0.2.0 (Beta)
 
 Beams is an open framework for building media websites, including news sites, blogs, video apps, et cetera. 
 
 ###Features
 
-Beams v0.1.3 is a beta release with the following features:
+Beams v0.2.0 is a beta release with the following features:
+
+- **Node.js/Express Web server.**
 
 - **Node.js/Express Web server.** A simple, fast, secure server script to get your project up and running quickly. A basic website file structure is also included for serving static pages of content.
 
@@ -18,13 +20,19 @@ Beams v0.1.3 is a beta release with the following features:
 
 To implement Beams, you'll need a computer to use as a server that has the following software installed.
 
-- **Node.js 0.10.26 or later.** Popular server-side JavaScript platform that uses Google's V8 engine.
+- **Nginx v1.7.11 or later.**
 
-- **npm 1.4.3 or later.** The node package manager. Helps add modules that enhance functionality of the stock version of Node.js. 
+- **Node.js 0.10.38 or later.** Popular server-side JavaScript platform that uses Google's V8 engine.
 
-- **Express 4.10.4 or later.** Add-on Node.js module for building full-featured Web apps.
+- **npm 1.4.28 or later.** The node package manager. Helps add modules that enhance functionality of the stock version of Node.js. 
 
-- **Forever 0.10.11 or later.** Add-on Node.js module that keeps the server running persistently.
+- **Express 4.12.3 or later.** Add-on Node.js module for building full-featured Web apps.
+
+- **Forever 0.14.1 or later.** Add-on Node.js module that keeps the server running persistently.
+
+- **MongoDB v3.0.1 or later.**
+
+- **Mongoskin v1.4.13 or later.**
 
 For full installation and usage instructions, see the "Getting Started" guide maintained by Roscoe Labs at http://roscoelabs.com/beams/getting-started.html
 
@@ -32,7 +40,7 @@ Roscoe Labs is the lead developer of Beams, which is free to use under MIT Licen
 
 Of course, we also encourage and welcome contributions and feedback from anyone interested in making Beams better. There are many ways for technical and non-technical contributors alike to participate, including our company GitHub page at https://github.com/roscoelabs and the Beams Working Group listserv at http://bit.ly/1rF4j0G
 
-Best,
+Cheers,
 
 Peter McKay  
 Co-Founder/Chief Product Officer  
