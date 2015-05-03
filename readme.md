@@ -1,12 +1,14 @@
 #Beams v0.2.0 (Beta)
 
-Beams is "an operating system for news." In other words, an open, full-stack framework for building media websites, including news sites, blogs, video apps, and so on.
+Beams is an operating system for news. 
+
+Specifically, the files included herein comprise a full-stack framework for building media websites, including news sites, blogs, video apps, and so on.
 
 ###Features
 
 Beams v0.2.0 is a beta release with the following features:
 
-- **Secure HTTPS server using Nginx and Node.js.** A simple, fast, secure server script to get your project up and running quickly. A basic website file structure is also included for serving static pages of content.
+- **Secure server using Nginx and Node.js.** A simple, fast server script to get your project up and running quickly using HTTPS. A basic website file structure is also included for serving static pages of content.
 
 - **Ultraresponsive layout.** Layout is based on a 20-column, 4,000-pixel grid. This allows elegant resizing of elements on any size screen, from a large TV down to a smartphone. Video players are also responsive, including support for embedded players for YouTube, Vimeo, and self-hosted HTML5 video.
 
