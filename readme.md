@@ -2,7 +2,7 @@
 
 ###An operating system for news
 
-Beams is a full-stack framework for building media websites, including news sites, blogs, video apps, and so on.
+Beams is an open full-stack framework for building media websites, including news sites, blogs, video apps, and so on.
 
 It includes the following features:
 
