@@ -16,7 +16,9 @@ It includes the following features:
 
 ###Requirements
 
-To implement Beams, you'll need a computer to use as a server that has the following software installed.
+To implement Beams, you'll need a computer to use as a server that has the following installed:
+
+- **A valid SSL certificate.** You'll have to buy one of these from a certificate authority like Comodo, DigiCert, etc. Be sure to follow the issuer's install instructions carefully.
 
 - **Nginx v1.7.11 or later.** This part of the stack handles HTTPS verification and, if your project calls for it, enhancfed load balancing to handle heavy traffic. 
 
