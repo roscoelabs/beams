@@ -1,14 +1,12 @@
 #Beams v0.2.0 (Beta)
 
-Beams is an open framework for building media websites, including news sites, blogs, video apps, et cetera. 
+Beams is "an operating system for news." In other words, an open, full-stack framework for building media websites, including news sites, blogs, video apps, and so on.
 
 ###Features
 
 Beams v0.2.0 is a beta release with the following features:
 
-- **Node.js/Express Web server.**
-
-- **Node.js/Express Web server.** A simple, fast, secure server script to get your project up and running quickly. A basic website file structure is also included for serving static pages of content.
+- **Secure HTTPS server using Nginx and Node.js.** A simple, fast, secure server script to get your project up and running quickly. A basic website file structure is also included for serving static pages of content.
 
 - **Ultraresponsive layout.** Layout is based on a 20-column, 4,000-pixel grid. This allows elegant resizing of elements on any size screen, from a large TV down to a smartphone. Video players are also responsive, including support for embedded players for YouTube, Vimeo, and self-hosted HTML5 video.
 
@@ -20,7 +18,7 @@ Beams v0.2.0 is a beta release with the following features:
 
 To implement Beams, you'll need a computer to use as a server that has the following software installed.
 
-- **Nginx v1.7.11 or later.**
+- **Nginx v1.7.11 or later.** This part of the stack handles HTTPS verification and, if your project calls for it, enhancfed load balancing to handle heavy traffic. 
 
 - **Node.js 0.10.38 or later.** Popular server-side JavaScript platform that uses Google's V8 engine.
 
@@ -30,9 +28,9 @@ To implement Beams, you'll need a computer to use as a server that has the follo
 
 - **Forever 0.14.1 or later.** Add-on Node.js module that keeps the server running persistently.
 
-- **MongoDB v3.0.1 or later.**
+- **MongoDB v3.0.1 or later.** A document-oriented NoSQL database.
 
-- **Mongoskin v1.4.13 or later.**
+- **Mongoskin v1.4.13 or later.** Node.js plugin/driver to aid integration with MongoDB.
 
 For full installation and usage instructions, see the "Getting Started" guide maintained by Roscoe Labs at http://roscoelabs.com/beams/getting-started.html
 
