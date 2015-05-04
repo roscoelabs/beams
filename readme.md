@@ -34,7 +34,7 @@ To implement Beams, you'll need a computer to use as a server that has the follo
 
 - **Mongoskin v1.4.13 or later.** Node.js plugin/driver to aid integration with MongoDB.
 
-For full installation and usage instructions, see the "Getting Started" guide maintained by Roscoe Labs at https://roscoelabs.com/beams/getting-started.html
+For full installation and usage instructions, see the "Getting Started" guide the Beams community maintains on GitHub at http://bit.ly/1KazCZv
 
 Roscoe Labs is the lead developer of Beams, which is free to use under MIT License. 
 
