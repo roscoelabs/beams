@@ -1,4 +1,4 @@
-#Beams v0.2.0 (Beta)
+#Beams v0.2.1 (Beta)
 
 ###An operating system for news
 
