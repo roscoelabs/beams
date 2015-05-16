@@ -1,8 +1,8 @@
-#Beams v0.2.1 (Beta)
+#Beams v0.2.5 (Beta)
 
 ###An operating system for news
 
-Beams is an open full-stack framework for building media websites, including news sites, blogs, video apps, and so on.
+Beams is an open full-stack framework for building media websites, including news sites, blogs, video apps, et cetera.
 
 It includes the following features:
 
@@ -12,7 +12,7 @@ It includes the following features:
 
 - **Default typefaces from Google Fonts.** We use Merriweather for headlines and Open Sans for pretty much everything else. (Of course, implementers should feel free to change these to something else if your project requires.)
 
-- **jQuery 2.1.3.** The framework's `beams-client.js` file includes a full, minified copy of this popular JavaScript library so your project can quickly call functions from it.
+- **jQuery 2.1.4.** The framework's `beams-client.min.js` file includes a full, minified copy of this popular JavaScript library so your project can quickly call functions from it.
 
 ###Requirements
 
