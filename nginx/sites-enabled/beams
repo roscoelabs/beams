@@ -1,23 +1,16 @@
-##
 
 #Beams v0.2.x (Beta)
 #Copyright (c) 2014-2015 Peter McKay
 #Free to use under MIT license.
 
-
-
-#Optional proxy to a back-end server...
-
 #upstream project {
-#  server 123.456.789.012;
+#  server 123.456.68.90;
 #}
 
-
 server {
-
   listen 443 ssl spdy default_server;
-  listen [::]:443 ssl spdy default_server;
-  server_name yoursite.com;
+  listen [::]:443 default_server;
+  server_name example.com;
   ssl_certificate ../ssl/certs/example.crt;
   ssl_certificate_key ../ssl/certs/example.key;
   ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
@@ -26,54 +19,27 @@ server {
   root /var/www;
   index index.html;
 
+  location / {
 
-  #Optional redirect to back-end server...
+    #add_header X-Proxy-Cache $upstream_cache_status;
+    #include proxy_params;
+    #proxy_set_header Host $host;
+    #proxy_pass http://project;
 
-  #location / {
-  #  proxy_set_header Host $host;
-  #  proxy_pass http://project;
-  #}
-
-
-
-  #Some simple rules for public caching, cache expiration...
-
-
-  #Images...
-  location /img/* {
-    add_header Cache-Control "public";
-    expires 10d;
-    access_log off;
+    try_files $uri $uri/ =404;
   }
 
-  #Video...
-  location /video/* {
-    add_header Cache-Control "public";
-    expires 10d;
-    access_log off;
-  }
+  #Setting cache to public for nested JavaScript, CSS, and media files...
 
-  #CSS files...
-  location /css/* {
-    add_header Cache-Control "public";
-    expires 10d;
+  location /*/* {
+    expires 6h;
     access_log off;
-  }
-
-  #Client-side JS files...
-  location /js/* {
     add_header Cache-Control "public";
-    expires 10d;
-    access_log off;
   }
 
 }
 
-
-#Redirecting vanilla HTTP requests to HTTPS...
-
 server {
   listen 80;
-  listen [::]:80;
   return 301 https://$host$request_uri;
 }
