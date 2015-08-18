@@ -1,0 +1,72 @@
+##
+
+#Beams v0.2.5 (Beta)
+#Copyright (c) 2014-2015 Peter McKay
+#Free to use under the MIT license.
+
+upstream project {
+  server 123.456.789.012:1337;     
+  #Customize IP address for your project. You can also add IPs in this object for additional instances of your app on additional servers or ports to handle load balancing.
+}
+ 
+#Main cache settings...
+  proxy_cache_path /tmp/nginx levels=1:2 keys_zone=beams_zone:20m inactive=15m;
+  proxy_cache_key "$scheme$proxy_host$uri$is_args$args";
+
+
+server {
+  listen 443 ssl spdy default_server;
+  server_name example.com;
+  ssl_certificate ../path/to/example.crt; 
+  ssl_certificate_key ../path/to/example.key;
+  #Be sure to check file paths on cert and key
+    
+  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+  ssl_ciphers HIGH:!aNULL:!MD5;
+  add_header Strict-Transport-Security max-age=500; 
+   
+  location / {
+    proxy_cache beams_zone;
+    proxy_cache_lock_timeout 2s;  
+    add_header X-Proxy-Cache $upstream_cache_status;
+    include proxy_params;
+    proxy_set_header Host $host;
+    proxy_pass http://project;
+  }
+
+  #Below, cache expiration rules for various types of static content...
+
+  #Images...
+  location /img/* {
+    expires 10m;
+    access_log off;
+    add_header Cache-Control "public";
+  }
+
+  #Video...
+  location /video/* {
+    expires 10m;
+    access_log off;
+    add_header Cache-Control "public";
+  }
+
+  #CSS files...
+  location /css/* {
+    expires 10m;
+    access_log off;
+    add_header Cache-Control "public";
+  }
+
+  #Client-side JS files...
+  location /js/* {
+    expires 6h;
+    access_log off;
+    add_header Cache-Control "public";
+  }
+
+}
+
+server {
+  listen 80;
+  return 301 https://$host$request_uri;
+}

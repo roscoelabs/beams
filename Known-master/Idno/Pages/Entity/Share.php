@@ -1,0 +1,103 @@
+<?php
+
+    /*
+     * Idno share page
+     */
+
+    namespace Idno\Pages\Entity {
+
+        /**
+         * Idno share screen
+         */
+        class Share extends \Idno\Common\Page
+        {
+
+            function getContent()
+            {
+                $this->gatekeeper();
+
+                $url   = $this->getInput('share_url', $this->getInput('url'));
+                $title = $this->getInput('share_title', $this->getInput('title'));
+                $type  = $this->getInput('share_type');
+
+                $event = new \Idno\Core\Event();
+                $event->setResponse($url);
+                \Idno\Core\site()->events()->dispatch('url/shorten', $event);
+                $short_url = $event->response();
+
+                if (!in_array($type, array('note', 'reply', 'rsvp', 'like', 'bookmark'))) {
+                    $share_type = 'note';
+
+                    if ($content = \Idno\Core\Webservice::get($url)) {
+                        if ($mf2 = \Idno\Core\Webmention::parseContent($content['content'])) {
+                            if (!empty($mf2['items'])) {
+                                foreach ($mf2['items'] as $item) {
+                                    if (!empty($item['type'])) {
+                                        if (in_array('h-entry', $item['type'])) {
+                                            $share_type = 'reply';
+                                        }
+                                        if (in_array('h-event', $item['type'])) {
+                                            $share_type = 'rsvp';
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    $share_type = $type;
+                }
+
+                $content_type = \Idno\Common\ContentType::getRegisteredForIndieWebPostType($share_type);
+
+                $hide_nav = false;
+                if ($this->getInput('via') == 'ff_social') {
+                    $hide_nav = true;
+                }
+
+                if (!empty($content_type)) {
+                    if ($page = \Idno\Core\site()->getPageHandler('/' . $content_type->camelCase($content_type->getEntityClassName()) . '/edit')) {
+                        if ($share_type == 'note' /*&& !substr_count($url, 'twitter.com')*/) {
+                            $page->setInput('body', $title . ' ' . $short_url);
+                        } else {
+                            $page->setInput('short-url', $short_url);
+                            $page->setInput('url', $url);
+                            if (substr_count($url, 'twitter.com')) {
+                                $atusers = [];
+                                preg_match("|https?://([a-z]+\.)?twitter\.com/(#!/)?@?([^/]*)|", $url, $matches);
+                                if (!empty($matches[3])) {
+                                    $atusers[] = '@' . $matches[3];
+//                                    $page->setInput('body', '@' . $matches[3] . ' ');
+                                }
+                                if (preg_match_all("|@([^\s^\)]+)|", $title, $matches)) {
+                                    $atusers = array_merge($atusers, $matches[0]);
+                                }
+
+                                // See if one of your registered twitter handles is present, if so remove it.
+                                $user = \Idno\Core\site()->session()->currentUser();
+                                if ((!empty($user->twitter)) && (is_array($user->twitter))) {
+                                    $me = [];
+                                    foreach ($user->twitter as $k => $v) {
+                                        $me[] = "@$k";
+                                    }
+                                    $atusers = array_diff($atusers, $me);
+                                }
+
+                                $atusers = array_unique($atusers);
+                                $page->setInput('body', implode(' ', $atusers) . ' ');
+                            }
+                        }
+                        $page->setInput('hidenav', $hide_nav);
+                        $page->setInput('sharing', true);
+                        $page->setInput('share_type', $share_type);
+                        $page->get();
+                    }
+                } else {
+                    $t    = \Idno\Core\site()->template();
+                    $body = $t->__(array('share_type' => $share_type, 'content_type' => $content_type, 'sharing' => true))->draw('entity/share');
+                    $t->__(array('title' => 'Share', 'body' => $body, 'hidenav' => $hide_nav))->drawPage();
+                }
+            }
+
+        }
+    }
