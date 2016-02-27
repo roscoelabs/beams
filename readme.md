@@ -1,14 +1,12 @@
 #Beams v0.2.x
 
-A development copy of the Beams framework, mostly for use in my personal projects. 
+A development copy of the Beams framework. 
 
 For latest "official" release, see https://github.com/roscoelabs/beams
 
-A Docker install on your machine is required for this version, which I've tested on Linux only. 
+A Docker install on your machine is required for this version. 
 
 For Docker basics and install instructions, see https://docs.docker.com/linux/
-
-
 
 
 Cheers,
