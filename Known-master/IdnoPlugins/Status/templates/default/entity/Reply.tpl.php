@@ -1,1 +1,0 @@
-<?= $this->draw('entity/Status'); ?>

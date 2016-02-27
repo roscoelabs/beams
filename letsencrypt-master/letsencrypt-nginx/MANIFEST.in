@@ -1,2 +1,0 @@
-recursive-include letsencrypt_nginx/tests/testdata *
-include letsencrypt_nginx/options-ssl-nginx.conf

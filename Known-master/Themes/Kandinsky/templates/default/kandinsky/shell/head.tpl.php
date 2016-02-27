@@ -1,1 +1,0 @@
-<link href="<?= \Idno\Core\site()->config()->getDisplayURL() ?>Themes/Kandinsky/css/default.css" rel="stylesheet">
