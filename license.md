@@ -6,7 +6,7 @@ The full Beams license follows:
 
 ====
 
-Copyright (c) 2014-2015 Peter McKay. All rights reserved.
+Copyright (c) 2014-2016 Peter McKay. All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -21,8 +21,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 
 Nginx is free to use under the following license:
 
-Copyright (C) 2002-2015 Igor Sysoev
-Copyright (C) 2011-2015 Nginx, Inc.
+Copyright (C) 2002-2016 Igor Sysoev
+Copyright (C) 2011-2016 Nginx, Inc.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:

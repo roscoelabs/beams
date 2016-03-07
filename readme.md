@@ -1,4 +1,4 @@
-#Beams v0.2.x
+#Beams v0.3.x
 
 A development copy of the Beams framework. 
 
