@@ -12,8 +12,9 @@ For Docker basics and install instructions, see https://docs.docker.com/linux/
 
 What we're adding in this version:
 
-- Implements a microservices architecture in Beams for the first time. The new software's components will comprise  an API Gateway that handles HTTPS handling, etc., plus two simple microservices:
-  - Public-facing static site.
+- Implements a microservices architecture in Beams for the first time. The new software's components will comprise  an API Gateway that handles HTTPS handling, etc., plus some simple microservices:
+  - Public-facing UI's for web, iOS, and Android.
+  - CMS
   - Analytics via Piwik.
   
 - Deployable via DockerHub   
