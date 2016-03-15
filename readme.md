@@ -2,7 +2,7 @@
 
 A development copy of the Beams framework. 
 
-For latest "official" release, see https://bit.ly/1XS0aWM
+For "official" releases, see https://bit.ly/1RjFVlG
 
 Cheers,
 
