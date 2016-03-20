@@ -3,6 +3,31 @@
 # Free to use under the MIT license.
 
 
+version: '2'
+
+services:
+  
+  beams: 
+    build: .
+      depends_on:
+        - api_gateway
+        - ui_web
+    
+  api_gateway:
+    build: 
+      context: ./api_gateway
+    pid: "host"
+    ports:
+      - "443:443"
+      - "80:80"
+
+  ui_web:
+    build:
+      context: ./ui_web
+    depends_on:
+      - api_gateway
+    ports: 
+      - "1337:1337"
 
 
 
