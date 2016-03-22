@@ -6,9 +6,5 @@
 FROM nginx
 MAINTAINER Peter McKay <pete@roscoelabs.com>
 
-#Add self-signed security cert to package...
-#Add config files to nginx, working off old Beams versions...
-#Restart nginx daemon...
-
-RUN echo "API gateway is up! Eureka!"
-CMD 
+RUN nginx -v 
+RUN ls

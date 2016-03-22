@@ -6,7 +6,10 @@
 version: '2'
 
 services:
-   
+  
+  beams: 
+
+
   api_gateway:
     build: ./api_gateway
     pid: "host"
