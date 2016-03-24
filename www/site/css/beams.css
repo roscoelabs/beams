@@ -1,0 +1,436 @@
+/*
+
+Beams v0.2.5 (Beta)
+Copyright (c) 2014-2015 Peter McKay
+Free to use under the MIT license.
+
+-------------------------------------
+
+Table of Content
+
+#Basics & Typography
+#Grid
+#Lists
+#Buttons
+#Blog
+#Forms
+#Miscellaneous
+#Media Queries
+
+
+----------------------------------------
+#Basics & Typography
+--------------------------------------*/
+
+
+*, *:before, *:after { /* Apply a natural box layout model and apply some other basic styles to all elements. H/t Paul Irish and Dave Gamache. */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  min-height: 100% /* Assures the page will fill the whole browser window. */
+}
+
+body {
+  width: 100%;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #A80000;
+  outline: 0;
+  font-weight: bold
+}
+
+a:hover, a:focus {text-decoration: underline}
+
+p, ul, ol, .button, label {
+  font-size: 1.4em;
+  line-height: 1.5;
+  margin-bottom: 1em;  
+}
+
+code {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  background: #EDEDED;
+  padding: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+h1 {font-size: 3.2em}
+
+h2 {font-size: 2.8em}
+
+h3 {font-size: 2.4em}
+
+h4 {font-size: 2em}
+
+h5 {font-size: 1.7em}
+
+h6 {font-size: 1.4em}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-weight: inherit}
+
+li {margin-bottom: 0.5em}
+
+ul:last-child {margin-bottom: 0}
+
+ol:last-child {margin-bottom: 0}
+
+em {font-style: italic}
+
+strong {font-weight: bold}
+
+img, video, .video {
+  max-width: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+hr {
+  clear: both;
+  border: 0;
+  height: 1px;
+  background: #BFBFBF;
+  display: block
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block}
+
+blockquote, q {quotes: none}
+
+blockquote {
+  font-style: italic;
+  margin-left: 2em;
+  margin-right: 2em;
+  border-left: 1px solid #BFBFBF;
+  padding-left: 2em;
+  padding-right: 2em;
+  display: block  
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; 
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; 
+}
+
+/*--------------------------------------
+#Grid
+--------------------------------------*/
+
+.beam {
+  width: 100%;
+  display: inline-block;
+  float: left;
+}
+
+.onecolumn, .twocolumn, .threecolumn, .fourcolumn, .fivecolumn, .sixcolumn, .sevencolumn, .eightcolumn, .ninecolumn, .tencolumn, .elevencolumn, .twelvecolumn, .thirteencolumn, .fourteencolumn, .fifteencolumn, .sixteencolumn, .seventeencolumn, .eighteencolumn, .nineteencolumn, .twentycolumn  {
+  margin: 0;
+  padding:  0.5em 1.5% 0.5em 1.5%; /* Creates internal gutters within content containers*/
+  display: inline-block;  
+  position: relative;
+  float: left;    
+}
+
+.onecolumn {width: 5%}
+
+.twocolumn {width: 10%}
+
+.threecolumn {width: 15%}
+
+.fourcolumn {width: 20%}
+
+.fivecolumn {width: 25%}
+
+.sixcolumn {width: 30%}
+
+.sevencolumn {width: 35%}
+
+.eightcolumn {width: 40%}
+
+.ninecolumn {width: 45%}
+
+.tencolumn {width: 50%}
+
+.elevencolumn {width: 55%}
+
+.twelvecolumn {width: 60%}
+
+.thirteencolumn {width: 65%}
+
+.fourteencolumn {width: 70%}
+
+.fifteencolumn {width: 75%}
+
+.sixteencolumn {width: 80%}
+
+.seventeencolumn {width: 85%}
+
+.eighteencolumn {width: 90%}
+
+.nineteencolumn {width: 95%}
+
+.twentycolumn {
+  width: 100%;
+  }
+
+
+
+/*--------------------------------------
+#Lists
+--------------------------------------*/
+
+ul, ol {display: block;}
+
+ul {list-style: square inside}
+
+ol {list-style: decimal}
+
+/*--------------------------------------
+#Buttons
+--------------------------------------*/
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+  background: #eee; /* Old browsers */
+  background: #eee -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(0,0,0,.2) 100%); /* FF3.6+ */
+  background: #eee -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.2)), color-stop(100%,rgba(0,0,0,.2))); /* Chrome,Safari4+ */
+  background: #eee -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Chrome10+,Safari5.1+ */
+  background: #eee -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Opera11.10+ */
+  background: #eee -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* IE10+ */
+  background: #eee linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* W3C */
+  border: 1px solid #aaa;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-radius: 3px;
+  color: #444;
+  display: inline-block;
+  font-weight: normal;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255, 255, 255, .75);
+  cursor: pointer;
+  margin-bottom: 5px;
+  line-height: normal;
+  padding: 0.5em;
+}
+
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+  color: #222;
+  background: #ddd; /* Old browsers */
+  background: #ddd -moz-linear-gradient(top, rgba(255,255,255,.3) 0%, rgba(0,0,0,.3) 100%); /* FF3.6+ */
+  background: #ddd -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.3)), color-stop(100%,rgba(0,0,0,.3))); /* Chrome,Safari4+ */
+  background: #ddd -webkit-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Chrome10+,Safari5.1+ */
+  background: #ddd -o-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Opera11.10+ */
+  background: #ddd -ms-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* IE10+ */
+  background: #ddd linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* W3C */
+  border: 1px solid #888;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa
+}
+
+.button:active, button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active {
+  border: 1px solid #666;
+  background: #ccc; /* Old browsers */
+  background: #ccc -moz-linear-gradient(top, rgba(255,255,255,.35) 0%, rgba(10,10,10,.4) 100%); /* FF3.6+ */
+  background: #ccc -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.35)), color-stop(100%,rgba(10,10,10,.4))); /* Chrome,Safari4+ */
+  background: #ccc -webkit-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* Chrome10+,Safari5.1+ */
+  background: #ccc -o-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* Opera11.10+ */
+  background: #ccc -ms-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* IE10+ */
+  background: #ccc linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* W3C */ 
+}
+
+.button.full-width, button.full-width, input[type="submit"].full-width, input[type="reset"].full-width, input[type="button"].full-width {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center; 
+}
+
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+
+/*--------------------------------------
+#Blog
+--------------------------------------*/
+
+.postmetadata {color: #ababab; font-weight: bold}
+
+.postbyline, .postdateline, .posttags {display: inline-block; margin: 0 0.25em 0 0}
+
+.blogpost {}
+
+.blogpost h3>a, .blogpost h3>a:hover {color: #000000}
+
+#blogrsslogo {
+  width: 0.75em;
+  margin-left: 10px;
+}
+
+#blogrsslogo img {}
+
+
+/*--------------------------------------
+#Forms
+--------------------------------------*/
+
+form {margin-bottom: 10px}
+
+fieldset {margin-bottom: 10px}
+
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+  border: 1px solid #ccc;
+  padding: 0.25em;
+  outline: none;
+  border-radius: 2px;
+  color: #777;
+  margin: 0;
+  width: 210px;
+  max-width: 100%;
+  display: block;
+		margin-bottom: 20px;
+		background: #fff; }
+	select {
+		padding: 0; }
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		border: 1px solid #aaa;
+ 		color: #444;
+ 		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		box-shadow:  0 0 3px rgba(0,0,0,.2); }
+	textarea {
+		min-height: 60px; }
+	label,
+	legend {
+		display: block;
+		font-weight: bold;
+		font-size: 13px;  }
+	select {
+		width: 220px; }
+	input[type="checkbox"] {
+		display: inline; }
+	label span,
+	legend span {
+		font-weight: normal;
+		font-size: 13px;
+		color: #444; }
+
+/*--------------------------------------
+#Miscellaneous
+--------------------------------------*/
+
+/* Some classes to give more flexibility with padding and margins... */
+
+.unpadded {padding: 0}
+
+.padded-bottom {padding-bottom: 30px}
+
+.padded-top {padding-top: 30px}
+
+.no-margin {margin: 0}
+
+.margin-top {margin-top: 30px}
+
+.margin-bottom {margin-bottom: 30px}
+
+.sidebar {}
+
+.mainbar {}
+
+.centered {
+  float: none; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+/*--------------------------------------
+#Media Queries
+--------------------------------------*/
+
+
+@media only screen and (max-width: 4000px) {} 
+
+@media only screen and (max-width: 3500px) {} /*End 3500px breakpoint*/
+
+@media only screen and (max-width: 3000px) {} /*End 3000px breakpoint*/
+
+@media only screen and (max-width: 2500px) {} /*End 2500px breakpoint*/
+
+@media only screen and (max-width: 2000px) {} /*End 2000px breakpoint*/
+
+@media only screen and (max-width: 2500px) {} /*End 2500px breakpoint*/
+
+@media only screen and (max-width: 1500px) {} /*End 1500px breakpoint*/
+
+@media only screen and (max-width: 1000px) {
+
+  .onecolumn, .twocolumn, .threecolumn, .fourcolumn, .fivecolumn, .sixcolumn, .sevencolumn, .eightcolumn, .ninecolumn, .tencolumn, .elevencolumn, .twelvecolumn, .thirteencolumn, .fourteencolumn, .fifteencolumn, .sixteencolumn, .seventeencolumn, .eighteencolumn, .nineteencolumn, .twentycolumn  {
+   }
+
+
+  .sidebar {float: right; width: 35%}
+  
+  .mainbar {width: 65%}
+
+  .centered {/*Resetting these properties so they continue to work...*/
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+} /*End 1000px breakpoint*/
+
+
+@media only screen and (max-width: 800px) {} /*End 800px breakpoint*/
+
+@media only screen and (max-width: 700px) {
+  
+  .beam {display: block}
+
+  .onecolumn, .twocolumn, .threecolumn, .fourcolumn, .fivecolumn, .sixcolumn, .sevencolumn, .eightcolumn, .ninecolumn, .tencolumn, .elevencolumn, .twelvecolumn, .thirteencolumn, .fourteencolumn, .fifteencolumn, .sixteencolumn, .seventeencolumn, .eighteencolumn, .nineteencolumn, .twentycolumn  {
+
+    float: none;
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+       
+  } 
+  
+  
+ } /*End 700px breakpoint*/
+
+@media only screen and (max-width: 500px) {} /*End 500px breakpoint*/

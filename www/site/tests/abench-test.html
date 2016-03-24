@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"><!-- Helps with responsive display -->
+  
+  <title>Test Page - Apache Bench</title>
+  
+  <!-- Prefetch DNS records for a few top video and content-sharing sites... -->
+  <link rel="dns-prefetch" href="https://youtube.com/"> 
+  <link rel="dns-prefetch" href="https://facebook.com/">
+  <link rel="dns-prefetch" href="https://twitter.com/">
+  
+  <link rel="icon" type="image/png" href="../img/favicon.png" /> <!-- An image to display as your site icon in the browser bar. -->
+  
+  <!-- Site stylesheets... -->
+  <style type="text/css" />
+  
+    @import 
+    
+    url('https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:300italic,700italic,700,300 ');
+    
+    
+  </style>
+  <link href="../css/beams.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Site scripts... -->
+  <script src="../js/beams-client.min.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+	  
+	   $(document).ready(function(){
+      
+      
+          // Scripts to run when page is fully loaded in the browser go here. For example, the following code connects the page to Google Analytics if desired...  */
+  
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'youraccountnumber']); /* Add your account on this line */
+    _gaq.push(['_setDomainName', 'yourdomain.com']); /* Add your domain name on this line*/
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  
+
+      }); //End ready
+       	  
+       	  
+  </script>
+  
+
+
+</head>
+
+
+<body>
+	
+  <div class="beam padded-bottom">
+    <div class="elevencolumn centered">
+		<img src="../img/sancrist.jpg" alt="Castillo de San Cristobal in Puerto Rico">
+		<h1 class="margin-top">Apache Bench Test Page</h1>
+		<p>This is a test page designed for use with Apache Bench. At your Beams server's command line, you can direct one or more tests to this page's url to gauge the server's performance.</p>
+		<p>Full documentation regarding the features and usage of Apache Bench is available from the Apache Software Foundation <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">here</a>.</p>
+		<p>If you just want to run a simple test to get started, here's one the Roscoe Labs team recommends:</p>
+		<code>ab -n 1000 -c 200 https://yoursite.com/tests/abench-test.html/</code>
+		<p class="margin-top margin-bottom">This test runs 1,000 requests to your server, with a maximum of 200 running concurrently.</p>
+    </div> <!-- End 18col container-->
+  </div><!-- End beam -->
+	
+</body>
+</html>
+

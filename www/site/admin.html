@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"><!-- Helps with responsive display -->
+  
+  <title>Sample Beams Page</title>
+  
+  <!-- Prefetch DNS records for a few top video and content-sharing sites... -->
+  <link rel="dns-prefetch" href="https://youtube.com/"> 
+  <link rel="dns-prefetch" href="https://facebook.com/">
+  <link rel="dns-prefetch" href="https://twitter.com/">
+  
+  <link rel="icon" type="image/png" href="img/favicon.png" /> <!-- An image to display as your site icon in the browser bar. -->
+  
+  <!-- Site stylesheets... -->
+  
+  <style type="text/css" />
+    @import url('https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:300italic,700italic,700,300 ');
+  </style>
+  
+  <link href="css/beams.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Site scripts... -->
+  <script src="js/beams-client.min.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+	  
+	   $(document).ready(function(){
+      
+      
+          // Scripts to run when page is fully loaded in the browser go here. For example, the following code connects the page to Google Analytics if desired...  */
+  
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'youraccountnumber']); /* Add your account on this line */
+    _gaq.push(['_setDomainName', 'yourdomain.com']); /* Add your domain name on this line*/
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  
+
+      }); //End ready
+       	  
+       	  
+  </script>
+  
+
+</head>
+
+<body>
+
+  <h1>Site admin panel goes here...</h1>
+
+</body>
+</html>
